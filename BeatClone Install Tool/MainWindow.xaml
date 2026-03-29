@@ -98,7 +98,7 @@
             </TextBlock>
 
             <TextBlock Margin="10,0" FontWeight="Bold">
-                <Hyperlink NavigateUri="https://mega.nz/file/sGlySZDR#TTdfvKVgWNYxMGFnDNsUd1aFidpd4fNT5RAlqinKJB0"
+                <Hyperlink NavigateUri="https://mega.nz/file/v9IGQADL#2sI9raE01IVMWHGp1zg7KlaOg0dZCZlqQ6HSZL6dwvU"
                            RequestNavigate="Hyperlink_RequestNavigate">
                     Get ASSETS Zip
                 </Hyperlink>
