@@ -1,0 +1,21 @@
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\MainWindow.g.cs
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\App.g.cs
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool_MarkupCompile.cache
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\BeatClone Install Tool.exe.config
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\BeatClone Install Tool.exe
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\BeatClone Install Tool.pdb
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\MainWindow.baml
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.g.resources
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone_Install_Tool.Properties.Resources.resources
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.csproj.GenerateResource.cache
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.csproj.CoreCompileInputs.cache
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.exe
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.pdb
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\BeatClone Install Tool.exe.manifest
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\BeatClone Install Tool.application
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.exe.manifest
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool.application
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\adb.exe
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\AdbWinApi.dll
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\bin\Debug\AdbWinUsbApi.dll
+C:\Users\Dots\source\repos\BeatClone Install Tool\BeatClone Install Tool\obj\Debug\BeatClone Install Tool_Content.g.cs

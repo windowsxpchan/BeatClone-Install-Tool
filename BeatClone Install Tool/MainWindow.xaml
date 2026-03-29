@@ -1,0 +1,116 @@
+﻿<Window x:Class="BeatClone_Install_Tool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BeatClone Install Tool"
+        Height="550" Width="700"
+        Icon="pack://application:,,,/logo.ico">
+
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Top controls -->
+            <RowDefinition Height="Auto"/>
+            <!-- Action buttons -->
+            <RowDefinition Height="Auto"/>
+            <!-- Progress bar -->
+            <RowDefinition Height="*"/>
+            <!-- Output log -->
+            <RowDefinition Height="Auto"/>
+            <!-- Links -->
+        </Grid.RowDefinitions>
+
+        <!-- Top Controls -->
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="BtnCheckDevice"
+                    Content="Check Device"
+                    Width="120"
+                    Margin="0,0,10,0"
+                    Click="BtnCheckDevice_Click"/>
+
+            <Ellipse x:Name="DeviceStatusIndicator"
+                     Width="20"
+                     Height="20"
+                     Fill="Red"
+                     VerticalAlignment="Center"
+                     Margin="0,0,5,0"/>
+
+            <TextBlock x:Name="DeviceStatusText"
+                       Text="No Device"
+                       VerticalAlignment="Center"
+                       FontWeight="Bold"/>
+        </StackPanel>
+
+        <!-- Action Buttons -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
+
+            <Button x:Name="InstallApkButton"
+            Content="Install APK"
+            Width="120"
+            Margin="0,0,10,0"
+            Click="InstallApkButton_Click"/>
+
+            <Button x:Name="DeployAssetsButton"
+            Content="Deploy Assets"
+            Width="120"
+            Margin="0,0,10,0"
+            Click="DeployAssetsButton_Click"/>
+
+            <Button x:Name="CopyUserFileButton"
+            Content="Copy User File"
+            Width="120"
+            Margin="0,0,10,0"
+            Click="CopyUserFileButton_Click"/>
+
+            <Button x:Name="RebootButton"
+            Content="Reboot Device"
+            Width="120"
+            Margin="0,0,10,0"
+            Click="RebootButton_Click"/>
+
+            <Button x:Name="ClearLogButton"
+            Content="Clear"
+            Width="60"
+            Click="ClearLogButton_Click"/>
+        </StackPanel>
+
+        <!-- Progress Bar -->
+        <ProgressBar x:Name="ProgressBar"
+                     Grid.Row="2"
+                     Height="20"
+                     Margin="0,0,0,10"/>
+
+        <!-- Output Log -->
+        <TextBox x:Name="OutputTextBox"
+                 Grid.Row="3"
+                 AcceptsReturn="True"
+                 VerticalScrollBarVisibility="Auto"
+                 IsReadOnly="True"
+                 TextWrapping="Wrap"/>
+
+        <!-- Bottom Links -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <TextBlock Margin="10,0" FontWeight="Bold">
+                <Hyperlink NavigateUri="https://mega.nz/file/lOsRCRZZ#e-G1mPPxCmWc6pflfqHbQxsm4Vsafs2utU1S8PJ4XBY"
+                           RequestNavigate="Hyperlink_RequestNavigate">
+                    Get APK
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Margin="10,0" FontWeight="Bold">
+                <Hyperlink NavigateUri="https://mega.nz/file/sGlySZDR#TTdfvKVgWNYxMGFnDNsUd1aFidpd4fNT5RAlqinKJB0"
+                           RequestNavigate="Hyperlink_RequestNavigate">
+                    Get ASSETS Zip
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Margin="10,0" FontWeight="Bold">
+                <Hyperlink NavigateUri="https://beatstarmod.app/"
+                           RequestNavigate="Hyperlink_RequestNavigate">
+                    Get USER file
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Window>
