@@ -168,7 +168,7 @@ namespace BeatClone_Install_Tool
             ZipFile.ExtractToDirectory(zipPath, extractPath);
             Log("Extraction complete.");
 
-            string finalPath = "/sdcard/beatstar/files";
+            string finalPath = "/sdcard/beatstar/assets";
 
             Log("Creating folder...");
             await RunAdb($"shell rm -r \"{finalPath}\"");

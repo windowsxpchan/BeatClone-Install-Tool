@@ -3,7 +3,58 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="BeatClone Install Tool"
         Height="550" Width="700"
-        Icon="pack://application:,,,/logo.ico">
+        Icon="pack://application:,,,/logo.ico"
+        Background="#1E1E1E"
+        Foreground="White">
+
+    <Window.Resources>
+
+        <!-- Button Style -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#2D2D30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#3F3F46"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#3E3E42"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#007ACC"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- TextBox Style -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#252526"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#3F3F46"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+
+        <!-- ProgressBar Style -->
+        <Style TargetType="ProgressBar">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Background" Value="#2D2D30"/>
+            <Setter Property="Foreground" Value="#007ACC"/>
+        </Style>
+
+        <!-- TextBlock Style -->
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <!-- Hyperlink Style -->
+        <Style TargetType="Hyperlink">
+            <Setter Property="Foreground" Value="#4FC1FF"/>
+        </Style>
+
+    </Window.Resources>
 
     <Grid Margin="10">
 
@@ -22,6 +73,7 @@
 
         <!-- Top Controls -->
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+
             <Button x:Name="BtnCheckDevice"
                     Content="Check Device"
                     Width="120"
@@ -39,50 +91,54 @@
                        Text="No Device"
                        VerticalAlignment="Center"
                        FontWeight="Bold"/>
+
         </StackPanel>
 
         <!-- Action Buttons -->
-        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1"
+                    Margin="0,0,0,10">
 
             <Button x:Name="InstallApkButton"
-            Content="Install APK"
-            Width="86"
-            Margin="0,0,10,0"
-            Click="InstallApkButton_Click"/>
+                    Content="Install APK"
+                    Width="86"
+                    Margin="0,0,10,0"
+                    Click="InstallApkButton_Click"/>
 
             <Button x:Name="DeployAssetsButton"
-            Content="Deploy Assets"
-            Width="98"
-            Margin="0,0,10,0"
-            Click="DeployAssetsButton_Click"/>
+                    Content="Deploy Assets"
+                    Width="98"
+                    Margin="0,0,10,0"
+                    Click="DeployAssetsButton_Click"/>
 
             <Button x:Name="CopyUserFileButton"
-            Content="Copy User File"
-            Width="90"
-            Margin="0,0,10,0"
-            Click="CopyUserFileButton_Click"/>
+                    Content="Copy User File"
+                    Width="90"
+                    Margin="0,0,10,0"
+                    Click="CopyUserFileButton_Click"/>
 
             <Button x:Name="CopyCustomButton"
-            Content="Import Custom Content"
-            Width="167"
-            Margin="0,0,10,0"
-            Click="CopyCustomButton_Click"/>
-            
+                    Content="Import Custom Content"
+                    Width="167"
+                    Margin="0,0,10,0"
+                    Click="CopyCustomButton_Click"/>
+
             <Button x:Name="RebootButton"
-            Content="Reboot Device"
-            Width="120"
-            Margin="0,0,10,0"
-            Click="RebootButton_Click"/>
+                    Content="Reboot Device"
+                    Width="120"
+                    Margin="0,0,10,0"
+                    Click="RebootButton_Click"/>
+
             <Button x:Name="ClearLogButton"
-            Content="Clear"
-            Width="43"
-            Click="ClearLogButton_Click"/>
+                    Content="Clear"
+                    Width="52"
+                    Click="ClearLogButton_Click"/>
+
         </StackPanel>
 
         <!-- Progress Bar -->
         <ProgressBar x:Name="ProgressBar"
                      Grid.Row="2"
-                     Height="20"
                      Margin="0,0,0,10"/>
 
         <!-- Output Log -->
@@ -91,30 +147,48 @@
                  AcceptsReturn="True"
                  VerticalScrollBarVisibility="Auto"
                  IsReadOnly="True"
-                 TextWrapping="Wrap"/>
+                 TextWrapping="Wrap"
+                 FontFamily="Consolas"
+                 Background="#1E1E1E"
+                 Foreground="#DCDCDC"/>
 
         <!-- Bottom Links -->
-        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0" Background="Black">
-            <TextBlock Margin="10,0" FontWeight="Bold">
+        <StackPanel Grid.Row="4"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="0,10,0,0"
+                    Background="#1E1E1E">
+
+            <TextBlock Margin="10,0"
+                       FontWeight="Bold">
+
                 <Hyperlink NavigateUri="https://mega.nz/file/lekFwazT#SdT0iT63Q1emdjMyNBm0AN2V3CdETiM6oYEUqntWR9A"
                            RequestNavigate="Hyperlink_RequestNavigate">
                     Get APK
                 </Hyperlink>
+
             </TextBlock>
 
-            <TextBlock Margin="10,0" FontWeight="Bold">
+            <TextBlock Margin="10,0"
+                       FontWeight="Bold">
+
                 <Hyperlink NavigateUri="https://mega.nz/file/v9IGQADL#2sI9raE01IVMWHGp1zg7KlaOg0dZCZlqQ6HSZL6dwvU"
                            RequestNavigate="Hyperlink_RequestNavigate">
                     Get ASSETS Zip
                 </Hyperlink>
+
             </TextBlock>
 
-            <TextBlock Margin="10,0" FontWeight="Bold">
+            <TextBlock Margin="10,0"
+                       FontWeight="Bold">
+
                 <Hyperlink NavigateUri="https://beatstarmod.app/"
                            RequestNavigate="Hyperlink_RequestNavigate">
                     Get USER file
                 </Hyperlink>
+
             </TextBlock>
+
         </StackPanel>
 
     </Grid>
